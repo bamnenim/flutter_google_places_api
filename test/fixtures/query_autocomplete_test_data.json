@@ -1,0 +1,115 @@
+{
+    "predictions": [
+       {
+          "description": "pizza near North Houston Airport, Airfield Lane, Porter, TX, USA",
+          "matched_substrings": [
+             {
+                "length": 5,
+                "offset": 0
+             },
+             {
+                "length": 21,
+                "offset": 11
+             }
+          ],
+          "structured_formatting": {
+             "main_text": "pizza",
+             "main_text_matched_substrings": [
+                {
+                   "length": 5,
+                   "offset": 0
+                }
+             ],
+             "secondary_text": "near North Houston Airport, Airfield Lane, Porter, TX, USA",
+             "secondary_text_matched_substrings": [
+                {
+                   "length": 21,
+                   "offset": 5
+                }
+             ]
+          },
+          "terms": [
+             {
+                "offset": 0,
+                "value": "pizza"
+             },
+             {
+                "offset": 6,
+                "value": "near"
+             },
+             {
+                "offset": 11,
+                "value": "North Houston Airport"
+             },
+             {
+                "offset": 34,
+                "value": "Airfield Lane"
+             },
+             {
+                "offset": 49,
+                "value": "Porter"
+             },
+             {
+                "offset": 57,
+                "value": "TX"
+             },
+             {
+                "offset": 61,
+                "value": "USA"
+             }
+          ]
+       },
+       {
+          "description": "pizza near HKUST (South), Clear Water Bay, Hong Kong",
+          "matched_substrings": [
+             {
+                "length": 5,
+                "offset": 0
+             },
+             {
+                "length": 5,
+                "offset": 11
+             }
+          ],
+          "structured_formatting": {
+             "main_text": "pizza",
+             "main_text_matched_substrings": [
+                {
+                   "length": 5,
+                   "offset": 0
+                }
+             ],
+             "secondary_text": "near HKUST (South), Clear Water Bay, Hong Kong",
+             "secondary_text_matched_substrings": [
+                {
+                   "length": 5,
+                   "offset": 5
+                }
+             ]
+          },
+          "terms": [
+             {
+                "offset": 0,
+                "value": "pizza"
+             },
+             {
+                "offset": 6,
+                "value": "near"
+             },
+             {
+                "offset": 11,
+                "value": "HKUST (South)"
+             },
+             {
+                "offset": 26,
+                "value": "Clear Water Bay"
+             },
+             {
+                "offset": 43,
+                "value": "Hong Kong"
+             }
+          ]
+       }
+    ],
+    "status": "OK"
+ }

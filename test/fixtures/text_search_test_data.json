@@ -1,0 +1,99 @@
+{
+    "html_attributions": [],
+    "results": [
+       {
+          "formatted_address": "Pok Fu Lam, Hong Kong",
+          "geometry": {
+             "location": {
+                "lat": 22.2829989,
+                "lng": 114.1370848
+             },
+             "viewport": {
+                "northeast": {
+                   "lat": 22.2848377,
+                   "lng": 114.1412664
+                },
+                "southwest": {
+                   "lat": 22.2799241,
+                   "lng": 114.135058
+                }
+             }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+          "id": "9cd5a496d30470c65d51a9d6f6587d4f6228ff7a",
+          "name": "The University of Hong Kong",
+          "opening_hours": {},
+          "photos": [
+             {
+                "height": 3024,
+                "html_attributions": [
+                   "<a href=\"https://maps.google.com/maps/contrib/113289025940344868831\">simon wong</a>"
+                ],
+                "photo_reference": "CmRaAAAA-cMLBMsVKkAoKQ_UlNzUa8lOgGtJn7ow7yWmiOl2ykLmGztEMWqlnElbECpSTiuKCfrmshj_pEIdyDO6qKmZ4pZAZ72D3xKKLN3hjkmAeI2n76t7n015OjBTZoOD0EiuEhCv1gINJWPqYfyyzF-FPWw2GhSOTDqxOJYfqAgQKLDZ5Gx2gzbUOA",
+                "width": 3024
+             }
+          ],
+          "place_id": "ChIJlzW0J4T_AzQR2MhvzdP1SCw",
+          "plus_code": {
+             "compound_code": "74MP+5R Hong Kong",
+             "global_code": "7PJP74MP+5R"
+          },
+          "rating": 4.4,
+          "reference": "ChIJlzW0J4T_AzQR2MhvzdP1SCw",
+          "types": [
+             "university",
+             "tourist_attraction",
+             "point_of_interest",
+             "establishment"
+          ],
+          "user_ratings_total": 511
+       },
+       {
+          "formatted_address": "Clear Water Bay, Hong Kong",
+          "geometry": {
+             "location": {
+                "lat": 22.3363998,
+                "lng": 114.2654655
+             },
+             "viewport": {
+                "northeast": {
+                   "lat": 22.34225680000001,
+                   "lng": 114.2673714
+                },
+                "southwest": {
+                   "lat": 22.32966279999999,
+                   "lng": 114.2597478
+                }
+             }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+          "id": "623a5d8c755a5c9f70785461993c0fbbdc4d5dd7",
+          "name": "Hong Kong University of Science and Technology",
+          "opening_hours": {},
+          "photos": [
+             {
+                "height": 2667,
+                "html_attributions": [
+                   "<a href=\"https://maps.google.com/maps/contrib/101584296985195388352\">CHENG WU</a>"
+                ],
+                "photo_reference": "CmRaAAAAhwFU1lQiyR27NPx6GPaqbcD-xk3FoYDZz_6hW7eLoeZwAfD2g3CpeHUwdjtIsDEI9oGd1txDbZyWP8P_wY84RfWAtgXPdnEFppyP5M533SrK7yeudXm9WNrQtHESENCwEhCibnPIjS0hFhiA_FKe_pFoGhRY_68tzPYDWKu99WilE2YZ5oW0tA",
+                "width": 4000
+             }
+          ],
+          "place_id": "ChIJFX6cwWsEBDQRvkH4nI_V7Ss",
+          "plus_code": {
+             "compound_code": "87P8+H5 Hong Kong",
+             "global_code": "7PJP87P8+H5"
+          },
+          "rating": 4.6,
+          "reference": "ChIJFX6cwWsEBDQRvkH4nI_V7Ss",
+          "types": [
+             "university",
+             "point_of_interest",
+             "establishment"
+          ],
+          "user_ratings_total": 384
+       }
+    ],
+    "status": "OK"
+ }

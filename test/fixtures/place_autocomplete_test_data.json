@@ -1,0 +1,215 @@
+{
+   "predictions": [
+      {
+         "description": "Hong Kong University of Science and Technology, Clear Water Bay, Hong Kong",
+         "id": "623a5d8c755a5c9f70785461993c0fbbdc4d5dd7",
+         "matched_substrings": [
+            {
+               "length": 46,
+               "offset": 0
+            }
+         ],
+         "place_id": "ChIJFX6cwWsEBDQRvkH4nI_V7Ss",
+         "reference": "ChIJFX6cwWsEBDQRvkH4nI_V7Ss",
+         "structured_formatting": {
+            "main_text": "Hong Kong University of Science and Technology",
+            "main_text_matched_substrings": [
+               {
+                  "length": 46,
+                  "offset": 0
+               }
+            ],
+            "secondary_text": "Clear Water Bay, Hong Kong"
+         },
+         "terms": [
+            {
+               "offset": 0,
+               "value": "Hong Kong University of Science and Technology"
+            },
+            {
+               "offset": 48,
+               "value": "Clear Water Bay"
+            },
+            {
+               "offset": 65,
+               "value": "Hong Kong"
+            }
+         ],
+         "types": [
+            "university",
+            "point_of_interest",
+            "establishment"
+         ]
+      },
+      {
+         "description": "HKUST South Gate, Clear Water Bay, Hong Kong",
+         "id": "877f55a961fcb8e8f2f96b8afa112b21a27a8dcb",
+         "matched_substrings": [
+            {
+               "length": 5,
+               "offset": 0
+            }
+         ],
+         "place_id": "ChIJLacSqmwEBDQRYrDUFuWC-oY",
+         "reference": "ChIJLacSqmwEBDQRYrDUFuWC-oY",
+         "structured_formatting": {
+            "main_text": "HKUST South Gate",
+            "main_text_matched_substrings": [
+               {
+                  "length": 5,
+                  "offset": 0
+               }
+            ],
+            "secondary_text": "Clear Water Bay, Hong Kong"
+         },
+         "terms": [
+            {
+               "offset": 0,
+               "value": "HKUST South Gate"
+            },
+            {
+               "offset": 18,
+               "value": "Clear Water Bay"
+            },
+            {
+               "offset": 35,
+               "value": "Hong Kong"
+            }
+         ],
+         "types": [
+            "university",
+            "point_of_interest",
+            "establishment"
+         ]
+      },
+      {
+         "description": "HKUST Business School Central, Chater Road, Central, Hong Kong",
+         "id": "76c71df80ccfdce987368d5f2f27643d7b44cc23",
+         "matched_substrings": [
+            {
+               "length": 5,
+               "offset": 0
+            }
+         ],
+         "place_id": "ChIJe0xTo2EIBDQRRUi_Jwo7R58",
+         "reference": "ChIJe0xTo2EIBDQRRUi_Jwo7R58",
+         "structured_formatting": {
+            "main_text": "HKUST Business School Central",
+            "main_text_matched_substrings": [
+               {
+                  "length": 5,
+                  "offset": 0
+               }
+            ],
+            "secondary_text": "Chater Road, Central, Hong Kong"
+         },
+         "terms": [
+            {
+               "offset": 0,
+               "value": "HKUST Business School Central"
+            },
+            {
+               "offset": 31,
+               "value": "Chater Road"
+            },
+            {
+               "offset": 44,
+               "value": "Central"
+            },
+            {
+               "offset": 53,
+               "value": "Hong Kong"
+            }
+         ],
+         "types": [
+            "university",
+            "university",
+            "point_of_interest",
+            "establishment"
+         ]
+      },
+      {
+         "description": "HKUST Library, Clear Water Bay, Hong Kong",
+         "id": "765d51dba9a10a054d3edd1aaf4a1a49dc877272",
+         "matched_substrings": [
+            {
+               "length": 5,
+               "offset": 0
+            }
+         ],
+         "place_id": "ChIJn9cMo2oEBDQRQCnmWm1I_kI",
+         "reference": "ChIJn9cMo2oEBDQRQCnmWm1I_kI",
+         "structured_formatting": {
+            "main_text": "HKUST Library",
+            "main_text_matched_substrings": [
+               {
+                  "length": 5,
+                  "offset": 0
+               }
+            ],
+            "secondary_text": "Clear Water Bay, Hong Kong"
+         },
+         "terms": [
+            {
+               "offset": 0,
+               "value": "HKUST Library"
+            },
+            {
+               "offset": 15,
+               "value": "Clear Water Bay"
+            },
+            {
+               "offset": 32,
+               "value": "Hong Kong"
+            }
+         ],
+         "types": [
+            "library",
+            "point_of_interest",
+            "establishment"
+         ]
+      },
+      {
+         "description": "HKUST (South), Clear Water Bay, Hong Kong",
+         "id": "4d289fbdc88d108e9ee228b01efe4497d92f3ab7",
+         "matched_substrings": [
+            {
+               "length": 5,
+               "offset": 0
+            }
+         ],
+         "place_id": "ChIJ42FQVWsEBDQRosfxJCz0J2w",
+         "reference": "ChIJ42FQVWsEBDQRosfxJCz0J2w",
+         "structured_formatting": {
+            "main_text": "HKUST (South)",
+            "main_text_matched_substrings": [
+               {
+                  "length": 5,
+                  "offset": 0
+               }
+            ],
+            "secondary_text": "Clear Water Bay, Hong Kong"
+         },
+         "terms": [
+            {
+               "offset": 0,
+               "value": "HKUST (South)"
+            },
+            {
+               "offset": 15,
+               "value": "Clear Water Bay"
+            },
+            {
+               "offset": 32,
+               "value": "Hong Kong"
+            }
+         ],
+         "types": [
+            "transit_station",
+            "point_of_interest",
+            "establishment"
+         ]
+      }
+   ],
+   "status": "OK"
+}

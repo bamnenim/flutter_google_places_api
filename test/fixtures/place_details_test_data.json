@@ -1,0 +1,208 @@
+{
+   "html_attributions": [],
+   "result": {
+      "address_components": [
+         {
+            "long_name": "Clear Water Bay",
+            "short_name": "Clear Water Bay",
+            "types": [
+               "neighborhood",
+               "political"
+            ]
+         },
+         {
+            "long_name": "New Territories",
+            "short_name": "New Territories",
+            "types": [
+               "administrative_area_level_1",
+               "political"
+            ]
+         },
+         {
+            "long_name": "Hong Kong",
+            "short_name": "HK",
+            "types": [
+               "country",
+               "political"
+            ]
+         }
+      ],
+      "adr_address": "\u003cspan class=\"locality\"\u003eClear Water Bay\u003c/span\u003e, \u003cspan class=\"country-name\"\u003eHong Kong\u003c/span\u003e",
+      "formatted_address": "Clear Water Bay, Hong Kong",
+      "formatted_phone_number": "2358 6000",
+      "geometry": {
+         "location": {
+            "lat": 22.3363998,
+            "lng": 114.2654655
+         },
+         "viewport": {
+            "northeast": {
+               "lat": 22.34225680000001,
+               "lng": 114.2673714
+            },
+            "southwest": {
+               "lat": 22.32966279999999,
+               "lng": 114.2597478
+            }
+         }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/school-71.png",
+      "id": "623a5d8c755a5c9f70785461993c0fbbdc4d5dd7",
+      "international_phone_number": "+852 2358 6000",
+      "name": "Hong Kong University of Science and Technology",
+      "permanently_closed": true,
+      "photos": [
+         {
+            "height": 2667,
+            "html_attributions": [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/101584296985195388352\"\u003eCHENG WU\u003c/a\u003e"
+            ],
+            "photo_reference": "CmRaAAAAbWKkJiM7aiKatHh7ZJJV7WO2lXY1FZ53M1QGWWgbXC5rg0PnMs_YAdMTWnRF1B7TVrjRtz6yvC4Kjevisd_msWhZl88u6-LkyedhhV4XwRoP_PlqvPop3vvuTY7M7BJTEhBzD1xQDxldtHCzCwftVpHiGhRtD3_3xJUIhTLNO1FdWchaNz34Dg",
+            "width": 4000
+         },
+         {
+            "height": 2160,
+            "html_attributions": [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/116115564391593702513\"\u003ePropertybox地產箱\u003c/a\u003e"
+            ],
+            "photo_reference": "CmRaAAAAT1psNRNXkU0TDTTr66YZxPL6J0fJwZmlynGZteypx-jZjc5tSgFaMdiwS1-TT0kwTn1ele5PcQZwhWanxADvtuJEeDiJLH5co5Q0JPtkOPF0frdgQJNDWJ67S4wDd-5EEhBrWHIO_Jtrfx9VcISkwJVWGhS-LUXg3tcwzXuH-rX_xC-W285p0A",
+            "width": 3840
+         },
+         {
+            "height": 476,
+            "html_attributions": [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/105694873857610690684\"\u003eElvis Wong\u003c/a\u003e"
+            ],
+            "photo_reference": "CmRaAAAAxLvcmDlhO90VknmlYx8fIf2w2RLtrMTkWQJ2OxUGUhzSQFbMQhXZGG-3mthFl9blfN3NZ7z4sbt90RI2aV4mrDm3FstbkuEXHep1lRD4q4HwmOD2g02NqysD2WYY1leNEhDg3p7Xg1-BeY59m07eV2tQGhQGdTvfdc5kOu7hffB9BoVoCqieBw",
+            "width": 960
+         },
+         {
+            "height": 2086,
+            "html_attributions": [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/113474098066506008429\"\u003eKing Tong Co\u003c/a\u003e"
+            ],
+            "photo_reference": "CmRaAAAANI-xz0PKKYSyzNXPYmX08aQdNhu7rFZ-3UCR6n2rSjH8iyssNVYP7zkcrrquENOVTzkoghbni_5DKgrUZ_M1PAyEch6XfmezMI3xw7X-bJ5X3Eph6F63FySRLI3WjtASEhA5CgkMzoyHNVnj_RRqt_o5GhT9j2IhOcZjMulVttedgPJIlBq1cw",
+            "width": 2988
+         },
+         {
+            "height": 1440,
+            "html_attributions": [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/101044968594735592883\"\u003e조영철\u003c/a\u003e"
+            ],
+            "photo_reference": "CmRaAAAA7xVNT_WhCboyF-v7QAlnNJCDp7zFF17qw3rMyURK_YUSfMvl3naXR9p8SypecVQNh4KRRzo7WZMrPJsD6eLKsMFx0H7gzMv79IuCjYSdNY-hcR5RlgbkDEnrl-vvXlwMEhAwDcaFZonDunzf2_3C5MpmGhQ8ztCqNBrhmeOpW_zNtPDU8Pgj-g",
+            "width": 2560
+         },
+         {
+            "height": 1200,
+            "html_attributions": [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/107592262535720741858\"\u003eDavid Cham\u003c/a\u003e"
+            ],
+            "photo_reference": "CmRaAAAAch_yw8zET1U7Z7mEbGk2lwRFZB0SmHbc68ewXCYxJO5b79ty2PUa8Hd0uzfZrNpD-7Nx0iDPcgvFlizXDAEtcyyUv5X1ZnC2Ij3C4VvAzrj9xe0ha3TJj_S9AbYtA5acEhCWFAUNML48Hlcy4aMKWmj8GhSwNXT7cOFT2FBrKe4pR7a8SnoZ3Q",
+            "width": 1600
+         },
+         {
+            "height": 1470,
+            "html_attributions": [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/100977918261774020648\"\u003eSK T\u003c/a\u003e"
+            ],
+            "photo_reference": "CmRaAAAAykYWFzHPhFhy20kz6mM_3t1gU-TB90ygXAqLbp2-ZKs9-ix-8gp3Q9ZhFgYWf23DmlskiubYlB2O_X01G__UZ28uqzvzvFGOWdiSrQiRJysr_w4CWs2l9PqHrQ8w3xR3EhAssuN4D2SBNsdcpYMudTocGhRgW5pc-FYL97utkct2J_915k59jQ",
+            "width": 2614
+         },
+         {
+            "height": 2448,
+            "html_attributions": [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/100701376662816217850\"\u003eMichael Shiu\u003c/a\u003e"
+            ],
+            "photo_reference": "CmRaAAAARV7LoIxJ6DgSX2ogcTNY0ns6SRZVbBVTqSusi7ioYukeQyLo3Se9w-EkWo8ALcIoLxsejVULGvwc1q8D0j29XqLKzJ2vUiCaRGbgAH4Sl7FavubkDORltBFCpzRORWohEhDYiunObMVXgm2sUc7n9IXDGhR1GRomozVVQoXA5ChMvoMjPNim1g",
+            "width": 3264
+         },
+         {
+            "height": 3322,
+            "html_attributions": [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/113474098066506008429\"\u003eKing Tong Co\u003c/a\u003e"
+            ],
+            "photo_reference": "CmRaAAAA2LiwjxO8ChbIEI4rI_oRhhUVI2YC7kfUyNx_1cDPtnvMwBZxVp9kRSNmOwyiyyZ1mHL1aFxDIvR8WyU8GgRbhU_IeDnUpsdyU5HByMS30aPp4YQh5TrYfZdftFjtag3LEhB_0_3M9ihF2XHf8c8jag-pGhRkgD6JKJi3fRUgrmr-U8F4CmZU1w",
+            "width": 2618
+         },
+         {
+            "height": 2645,
+            "html_attributions": [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/101229386400360156303\"\u003eTaoan Ma\u003c/a\u003e"
+            ],
+            "photo_reference": "CmRZAAAACS8G3FHFOYrvuqEcYJroGi_eTj3w-N5csGWdCFegRpIt9ByZ_6dUR-TpOJgUXemOGH8df10hH4t4M44fk6Y_UKRtkwRTixxUFr70qH95tw8oKPWMQ1aBoOBQLlM3mNhxEhAEcu01N_4JAeIH6llnzEhqGhRrxk2J0be6ISQOt9CvNKNzUlsnkw",
+            "width": 3968
+         }
+      ],
+      "place_id": "ChIJFX6cwWsEBDQRvkH4nI_V7Ss",
+      "plus_code": {
+         "compound_code": "87P8+H5 Clear Water Bay, Hong Kong",
+         "global_code": "7PJP87P8+H5"
+      },
+      "rating": 4.6,
+      "reference": "ChIJFX6cwWsEBDQRvkH4nI_V7Ss",
+      "reviews": [
+         {
+            "author_name": "Cheung Samuel",
+            "author_url": "https://www.google.com/maps/contrib/114046268441650505584/reviews",
+            "language": "en",
+            "profile_photo_url": "https://lh6.ggpht.com/-xK8JBWD9PlE/AAAAAAAAAAI/AAAAAAAAAAA/t4UK9HqY5Fc/s128-c0x00000000-cc-rp-mo-ba4/photo.jpg",
+            "rating": 5,
+            "relative_time_description": "a year ago",
+            "text": "The school is well designed. Near the coast, the building has a unique shape that facilitates intensive air flow, so the place becomes windy most of the time. However, the school is far from the town, which you need bus to come and leave.",
+            "time": 1552648634
+         },
+         {
+            "author_name": "Michael Shiu",
+            "author_url": "https://www.google.com/maps/contrib/100701376662816217850/reviews",
+            "language": "en",
+            "profile_photo_url": "https://lh6.ggpht.com/-qeo3zyrtvr0/AAAAAAAAAAI/AAAAAAAAAAA/lJmJVLwGZ0M/s128-c0x00000000-cc-rp-mo-ba4/photo.jpg",
+            "rating": 5,
+            "relative_time_description": "a year ago",
+            "text": "I am proud to be one of the students in this world class university. Not only the great learning atmosphere, but also the beautiful sea view of the Clearwater Bay. It really makes me feel relaxed when I watch it in my student hall.",
+            "time": 1544009304
+         },
+         {
+            "author_name": "Kaho Chan",
+            "author_url": "https://www.google.com/maps/contrib/116488676699044988229/reviews",
+            "language": "en",
+            "profile_photo_url": "https://lh6.ggpht.com/-G7sAQbHRy1k/AAAAAAAAAAI/AAAAAAAAAAA/MeVvAx2OB50/s128-c0x00000000-cc-rp-mo-ba3/photo.jpg",
+            "rating": 5,
+            "relative_time_description": "11 months ago",
+            "text": "Envy the students there with amazing sea view!",
+            "time": 1554527551
+         },
+         {
+            "author_name": "Calvin Sim",
+            "author_url": "https://www.google.com/maps/contrib/103128429614857031939/reviews",
+            "language": "en",
+            "profile_photo_url": "https://lh5.ggpht.com/-biYigJsdTNc/AAAAAAAAAAI/AAAAAAAAAAA/HnScuOdtDF4/s128-c0x00000000-cc-rp-mo-ba6/photo.jpg",
+            "rating": 5,
+            "relative_time_description": "11 months ago",
+            "text": "In my opinion, the most scenic university campus",
+            "time": 1556557584
+         },
+         {
+            "author_name": "Ho Yin Wong",
+            "author_url": "https://www.google.com/maps/contrib/111842535037186515771/reviews",
+            "language": "en",
+            "profile_photo_url": "https://lh3.ggpht.com/-059c4QahO4k/AAAAAAAAAAI/AAAAAAAAAAA/WbJmUA5fdJk/s128-c0x00000000-cc-rp-mo-ba3/photo.jpg",
+            "rating": 5,
+            "relative_time_description": "a year ago",
+            "text": "Adequate Academic facilities, and an awesome View!",
+            "time": 1553599881
+         }
+      ],
+      "scope": "GOOGLE",
+      "types": [
+         "university",
+         "point_of_interest",
+         "establishment"
+      ],
+      "url": "https://maps.google.com/?cid=3165420925901881790",
+      "user_ratings_total": 384,
+      "utc_offset": 480,
+      "vicinity": "Clear Water Bay",
+      "website": "https://www.ust.hk/"
+   },
+   "status": "OK"
+}

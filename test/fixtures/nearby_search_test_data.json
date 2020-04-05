@@ -1,0 +1,83 @@
+{
+    "html_attributions": [],
+    "results": [
+       {
+          "geometry": {
+             "location": {
+                "lat": 22.31920109999999,
+                "lng": 114.1696121
+             },
+             "viewport": {
+                "northeast": {
+                   "lat": 22.561968,
+                   "lng": 114.4294999
+                },
+                "southwest": {
+                   "lat": 22.1435,
+                   "lng": 113.8259001
+                }
+             }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+          "id": "e7837e254c7b5dd74314f5a165f6a5b7e9fe48ad",
+          "name": "Hong Kong",
+          "photos": [
+             {
+                "height": 1160,
+                "html_attributions": [
+                   "<a href=\"https://maps.google.com/maps/contrib/102456824608065103317\">María Fernando</a>"
+                ],
+                "photo_reference": "CmRaAAAAXyndcVSkW0r3dRu_ToG7u1ZKX4f-BBp7f2KJhArquAQJgHmXernaS_uV8nq5fHbM0SgKKstoafqUEd9iiZ311IerG_WxkW1BVatUPOmE9Oa2ic11HsDwvuvGyK2YTIqOEhBLSQkUjHVTXYMvHhsaxvnEGhTERIrsXuGKkDS2C-j-mvdln28_Zw",
+                "width": 2592
+             }
+          ],
+          "place_id": "ChIJByjqov3-AzQR2pT0dDW0bUg",
+          "reference": "ChIJByjqov3-AzQR2pT0dDW0bUg",
+          "scope": "GOOGLE",
+          "types": [
+             "locality",
+             "political"
+          ],
+          "vicinity": "Hong Kong"
+       },
+       {
+          "geometry": {
+             "location": {
+                "lat": 22.3207164,
+                "lng": 114.2713158
+             },
+             "viewport": {
+                "northeast": {
+                   "lat": 22.357655,
+                   "lng": 114.3122371
+                },
+                "southwest": {
+                   "lat": 22.260458,
+                   "lng": 114.211208
+                }
+             }
+          },
+          "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+          "id": "16ce88d89a43e23ee79a2922790a22c4d245042b",
+          "name": "Clear Water Bay",
+          "photos": [
+             {
+                "height": 2160,
+                "html_attributions": [
+                   "<a href=\"https://maps.google.com/maps/contrib/103066853784712480412\">Roger Kluge</a>"
+                ],
+                "photo_reference": "CmRaAAAAI02bxf0J3BATyFIKyJ6Uzx_6f3PLK3lWw0WpLhSEIhjl0YhI3vUBw5sto0caF4GrQJX_0qfUWt9MdsJqjfbkLkaw_YnEIDDZO2RS68IiPh-1Ms_KaYx61wJjXdRimdjEEhDoZ7_oBD04X5wzIfpiylLOGhScLXjG2mbVncVVNhZpmi_BCAm2mw",
+                "width": 3840
+             }
+          ],
+          "place_id": "ChIJd3-pJPMDBDQR3LaBS8yOSE0",
+          "reference": "ChIJd3-pJPMDBDQR3LaBS8yOSE0",
+          "scope": "GOOGLE",
+          "types": [
+             "neighborhood",
+             "political"
+          ]
+       }
+    ],
+    "status": "OK"
+ }
