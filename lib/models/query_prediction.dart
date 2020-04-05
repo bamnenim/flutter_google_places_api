@@ -1,7 +1,7 @@
 import 'package:equatable/equatable.dart';
-import 'package:google_places_api/models/matched_substrings.dart';
-import 'package:google_places_api/models/structured_formatting.dart';
-import 'package:google_places_api/models/term.dart';
+import 'package:flutter_google_places_api/models/matched_substrings.dart';
+import 'package:flutter_google_places_api/models/structured_formatting.dart';
+import 'package:flutter_google_places_api/models/term.dart';
 
 class QueryPrediction extends Equatable{
   final String description;

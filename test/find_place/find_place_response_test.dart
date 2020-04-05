@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:google_places_api/responses/find_place_response.dart';
+import 'package:flutter_google_places_api/responses/find_place_response.dart';
 import 'package:flutter_test/flutter_test.dart';
 import '../fixtures/fixture_reader.dart';
 

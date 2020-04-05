@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:google_places_api/models/model.dart';
+import 'package:flutter_google_places_api/models/model.dart';
 
 class DebugLog extends Model with EquatableMixin{
   final List<String> line;

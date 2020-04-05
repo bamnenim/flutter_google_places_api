@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:google_places_api/models/matched_substrings.dart';
+import 'package:flutter_google_places_api/models/matched_substrings.dart';
 
 class StructuredFormatting extends Equatable{
   final String mainText;

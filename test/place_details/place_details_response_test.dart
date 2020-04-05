@@ -1,11 +1,11 @@
 import 'dart:convert';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:google_places_api/core/utills/place_status.dart';
-import 'package:google_places_api/models/place_details_result.dart';
-import 'package:google_places_api/requests/place_details_request.dart';
+import 'package:flutter_google_places_api/core/utills/place_status.dart';
+import 'package:flutter_google_places_api/models/place_details_result.dart';
+import 'package:flutter_google_places_api/requests/place_details_request.dart';
 import 'package:mockito/mockito.dart';
-import 'package:google_places_api/responses/place_details_response.dart';
+import 'package:flutter_google_places_api/responses/place_details_response.dart';
 import 'package:http/http.dart';
 
 import '../fixtures/fixture_reader.dart';

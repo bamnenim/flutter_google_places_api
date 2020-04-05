@@ -1,8 +1,8 @@
 import 'package:equatable/equatable.dart';
-import 'package:google_places_api/core/utills/place_status.dart';
-import 'package:google_places_api/models/candidate.dart';
-import 'package:google_places_api/models/debug_log.dart';
-import 'package:google_places_api/responses/place_response.dart';
+import 'package:flutter_google_places_api/core/utills/place_status.dart';
+import 'package:flutter_google_places_api/models/candidate.dart';
+import 'package:flutter_google_places_api/models/debug_log.dart';
+import 'package:flutter_google_places_api/responses/place_response.dart';
 import 'package:meta/meta.dart';
 
 class FindPlaceResponse extends PlaceResponse with EquatableMixin{

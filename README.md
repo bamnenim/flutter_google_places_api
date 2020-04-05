@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.com/bamnenim/flutter_google_places_api.svg?branch=master)](https://travis-ci.com/bamnenim/flutter_google_places_api)
 
-# google_places_api
+# flutter_google_places_api
 
 An implementation of [google place api](https://developers.google.com/places/web-service/intro)
 

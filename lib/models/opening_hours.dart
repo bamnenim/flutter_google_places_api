@@ -1,6 +1,6 @@
 import 'package:equatable/equatable.dart';
-import 'package:google_places_api/models/model.dart';
-import 'package:google_places_api/models/period.dart';
+import 'package:flutter_google_places_api/models/model.dart';
+import 'package:flutter_google_places_api/models/period.dart';
 
 class OpeningHours extends Model with EquatableMixin{
   final bool openNow;

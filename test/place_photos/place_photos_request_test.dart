@@ -1,6 +1,6 @@
 import 'dart:typed_data';
 
-import 'package:google_places_api/requests/place_photos_request.dart';
+import 'package:flutter_google_places_api/requests/place_photos_request.dart';
 import 'package:meta/meta.dart';
 import 'package:http/http.dart';
 import 'package:flutter_test/flutter_test.dart';

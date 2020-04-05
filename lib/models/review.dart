@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:google_places_api/models/model.dart';
+import 'package:flutter_google_places_api/models/model.dart';
 import 'package:meta/meta.dart';
 
 class Review extends Model with EquatableMixin {

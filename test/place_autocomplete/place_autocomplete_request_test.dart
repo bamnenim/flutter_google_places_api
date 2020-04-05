@@ -1,8 +1,8 @@
 import 'dart:convert';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:google_places_api/models/location.dart';
-import 'package:google_places_api/requests/place_autocomplete_request.dart';
-import 'package:google_places_api/responses/place_autocomplete_response.dart';
+import 'package:flutter_google_places_api/models/location.dart';
+import 'package:flutter_google_places_api/requests/place_autocomplete_request.dart';
+import 'package:flutter_google_places_api/responses/place_autocomplete_response.dart';
 import 'package:mockito/mockito.dart';
 import 'package:http/http.dart' as http;
 

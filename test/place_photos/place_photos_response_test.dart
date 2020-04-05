@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 import 'package:http/http.dart';
-import 'package:google_places_api/responses/place_photos_response.dart';
+import 'package:flutter_google_places_api/responses/place_photos_response.dart';
 
 import '../fixtures/fixture_reader.dart';
 

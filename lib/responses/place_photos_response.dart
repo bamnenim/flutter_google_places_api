@@ -1,7 +1,7 @@
 import 'dart:typed_data';
 
 import 'package:equatable/equatable.dart';
-import 'package:google_places_api/responses/place_response.dart';
+import 'package:flutter_google_places_api/responses/place_response.dart';
 
 class PlacePhotoResponse extends PlaceResponse with EquatableMixin{
   final Uint8List imageByte;

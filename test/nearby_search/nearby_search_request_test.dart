@@ -1,8 +1,8 @@
 import 'dart:convert';
 
-import 'package:google_places_api/models/location.dart';
-import 'package:google_places_api/requests/nearby_search_request.dart';
-import 'package:google_places_api/responses/nearby_search_response.dart';
+import 'package:flutter_google_places_api/models/location.dart';
+import 'package:flutter_google_places_api/requests/nearby_search_request.dart';
+import 'package:flutter_google_places_api/responses/nearby_search_response.dart';
 import 'package:http/http.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';

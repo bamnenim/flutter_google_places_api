@@ -1,8 +1,8 @@
 import 'package:equatable/equatable.dart';
-import 'package:google_places_api/models/place_prediction.dart';
+import 'package:flutter_google_places_api/models/place_prediction.dart';
 import 'package:meta/meta.dart';
-import 'package:google_places_api/core/utills/place_status.dart';
-import 'package:google_places_api/responses/place_response.dart';
+import 'package:flutter_google_places_api/core/utills/place_status.dart';
+import 'package:flutter_google_places_api/responses/place_response.dart';
 
 class PlaceAutocompleteResponse extends PlaceResponse with EquatableMixin{
   final PlaceStatus status;

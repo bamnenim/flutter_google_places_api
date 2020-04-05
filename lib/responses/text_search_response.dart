@@ -1,7 +1,7 @@
 import 'package:equatable/equatable.dart';
-import 'package:google_places_api/core/utills/place_status.dart';
-import 'package:google_places_api/models/text_search_result.dart';
-import 'package:google_places_api/responses/place_response.dart';
+import 'package:flutter_google_places_api/core/utills/place_status.dart';
+import 'package:flutter_google_places_api/models/text_search_result.dart';
+import 'package:flutter_google_places_api/responses/place_response.dart';
 import 'package:meta/meta.dart';
 
 class TextSearchResponse extends PlaceResponse with EquatableMixin{

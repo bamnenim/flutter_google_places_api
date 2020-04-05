@@ -1,4 +1,4 @@
-import 'package:google_places_api/core/utills/place_status.dart';
+import 'package:flutter_google_places_api/core/utills/place_status.dart';
 import 'package:meta/meta.dart';
 
 abstract class PlaceResponse {

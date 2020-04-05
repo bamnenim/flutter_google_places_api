@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:google_places_api/requests/place_autocomplete_request.dart';
-import 'package:google_places_api/requests/place_details_request.dart';
+import 'package:flutter_google_places_api/requests/place_autocomplete_request.dart';
+import 'package:flutter_google_places_api/requests/place_details_request.dart';
 import 'package:http/http.dart' as http;
 import 'package:mockito/mockito.dart';
 

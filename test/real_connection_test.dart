@@ -1,12 +1,12 @@
 import 'dart:convert';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:google_places_api/requests/find_place_request.dart';
-import 'package:google_places_api/requests/place_autocomplete_request.dart';
-import 'package:google_places_api/requests/place_details_request.dart';
-import 'package:google_places_api/requests/place_photos_request.dart';
-import 'package:google_places_api/requests/query_autocomplete_request.dart';
-import 'package:google_places_api/responses/place_autocomplete_response.dart';
-import 'package:google_places_api/responses/place_details_response.dart';
+import 'package:flutter_google_places_api/requests/find_place_request.dart';
+import 'package:flutter_google_places_api/requests/place_autocomplete_request.dart';
+import 'package:flutter_google_places_api/requests/place_details_request.dart';
+import 'package:flutter_google_places_api/requests/place_photos_request.dart';
+import 'package:flutter_google_places_api/requests/query_autocomplete_request.dart';
+import 'package:flutter_google_places_api/responses/place_autocomplete_response.dart';
+import 'package:flutter_google_places_api/responses/place_details_response.dart';
 import 'fixtures/fixture_reader.dart';
 
 void main() {

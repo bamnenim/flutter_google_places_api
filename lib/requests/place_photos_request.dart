@@ -1,5 +1,5 @@
-import 'package:google_places_api/requests/places_request.dart';
-import 'package:google_places_api/responses/place_photos_response.dart';
+import 'package:flutter_google_places_api/requests/places_request.dart';
+import 'package:flutter_google_places_api/responses/place_photos_response.dart';
 import 'package:http/http.dart';
 import 'package:meta/meta.dart';
 

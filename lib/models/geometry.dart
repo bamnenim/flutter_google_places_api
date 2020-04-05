@@ -1,6 +1,6 @@
 import 'package:equatable/equatable.dart';
-import 'package:google_places_api/models/location.dart';
-import 'package:google_places_api/models/viewport.dart';
+import 'package:flutter_google_places_api/models/location.dart';
+import 'package:flutter_google_places_api/models/viewport.dart';
 
 class Geometry extends Equatable{
   final Location location;
