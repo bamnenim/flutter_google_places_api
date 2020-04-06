@@ -1,7 +1,6 @@
 name: flutter_google_places_api
 description: A new Flutter package project.
 version: 0.0.1
-author: Jungwoo Yun <bamnenim@gmail.com>
 homepage: https://github.com/bamnenim/flutter_google_places_api
 
 environment:
@@ -12,6 +11,7 @@ dependencies:
     sdk: flutter
   http: ^0.12.0+4
   equatable: ^1.1.1
+  meta: ^1.1.8
 
 dev_dependencies:
   flutter_test:
