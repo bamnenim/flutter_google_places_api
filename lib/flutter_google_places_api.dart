@@ -1,7 +1,5 @@
 library flutter_google_places_api;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+export 'package:flutter_google_places_api/models/models.dart';
+export 'package:flutter_google_places_api/responses/responses.dart';
+export 'package:flutter_google_places_api/requests/requests.dart';
