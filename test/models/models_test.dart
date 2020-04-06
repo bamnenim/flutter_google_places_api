@@ -18,13 +18,8 @@ import 'package:flutter_google_places_api/models/structured_formatting.dart';
 import 'package:flutter_google_places_api/models/term.dart';
 import 'package:flutter_google_places_api/models/text_search_result.dart';
 import 'package:flutter_google_places_api/models/viewport.dart';
-import 'package:flutter_google_places_api/requests/place_autocomplete_request.dart';
-import 'package:flutter_google_places_api/responses/find_place_response.dart';
-import 'package:flutter_google_places_api/responses/nearby_search_response.dart';
 import 'package:flutter_google_places_api/responses/place_autocomplete_response.dart';
-import 'package:flutter_google_places_api/responses/place_details_response.dart';
 import 'package:flutter_google_places_api/responses/query_autocomplete_response.dart';
-
 import '../fixtures/fixture_reader.dart';
 
 void main() {

@@ -6,7 +6,6 @@ import 'package:flutter_google_places_api/models/opening_hours.dart';
 import 'package:flutter_google_places_api/models/photo.dart';
 import 'package:flutter_google_places_api/models/plus_code.dart';
 import 'package:flutter_google_places_api/models/review.dart';
-import 'package:meta/meta.dart';
 
 class PlaceDetailsResult extends Model with EquatableMixin {
   final List<AddressComponent> addressComponents;

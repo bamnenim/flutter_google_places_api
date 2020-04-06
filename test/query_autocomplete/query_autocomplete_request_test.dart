@@ -1,6 +1,5 @@
 import 'dart:convert';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_google_places_api/models/location.dart';
 import 'package:flutter_google_places_api/requests/query_autocomplete_request.dart';
 import 'package:flutter_google_places_api/responses/query_autocomplete_response.dart';
 import 'package:mockito/mockito.dart';
@@ -32,8 +31,6 @@ void main() {
     'radius': null,
     'language': 'kr',
   };
-  final tQuery = 
-  'key=test_key&input=test_input&location=37.76999,-122.44696&radius=500';
 
   setUp(() {
     mockHttpClient = MockHttpClient();
@@ -56,24 +53,6 @@ void main() {
       ///assert
       verify(mockPlaceAutocompleteRequest.getQueryParams());
       expect(mockQueryParams, gottonQueryParams);
-    });
-
-    test('build query test', 
-    () {
-      ///arrange
-      when(mockPlaceAutocompleteRequest.buildQuery(any)).thenAnswer((_)=>tQuery);
-      var tRequest = QueryAutocompleteRequest(
-        key: tKey,
-        input: tInput,
-        location: Location(lat: 37.76999, lng: -122.44696),
-        radius: 500,
-      );
-      ///act
-      var mockQuery = mockPlaceAutocompleteRequest.buildQuery({});
-      var builtQuery = tRequest.buildQuery(tRequest.getQueryParams());
-      ///assert
-      verify(mockPlaceAutocompleteRequest.buildQuery({}));
-      expect(mockQuery, builtQuery);
     });
 
     test(' build url test', 

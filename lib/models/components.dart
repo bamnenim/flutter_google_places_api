@@ -39,4 +39,7 @@ class Components {
       }
     return false;
   }
+
+  @override
+  int get hashCode => super.hashCode;
 }

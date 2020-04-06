@@ -12,7 +12,6 @@ class MockFindPlaceRequest extends Mock implements FindPlaceRequest{}
 
 void main() {
   MockHttpClient mockHttpClient;
-  MockFindPlaceRequest mockFindPlaceRequest;
   final utf8Header = {
     "content-type":"application/json; charset=utf-8"
   }; // for mcoking utf-8 charset http response
@@ -23,7 +22,6 @@ void main() {
   final tFields = ['place_id'];
   setUp(() {
     mockHttpClient = MockHttpClient();
-    mockFindPlaceRequest = MockFindPlaceRequest();
   });
 
   group('find place request tests: ', () {
@@ -63,6 +61,7 @@ void main() {
       ).call();
       ///assert
       verify(mockHttpClient.get(any));
+      expect(tResponse.status.status, equals(response.status.status));
     });
   });
 }

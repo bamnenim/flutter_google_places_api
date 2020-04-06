@@ -1,7 +1,5 @@
 import 'dart:typed_data';
-
 import 'package:flutter_google_places_api/requests/place_photos_request.dart';
-import 'package:meta/meta.dart';
 import 'package:http/http.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
@@ -11,7 +9,6 @@ class MockPlacePhotoRequest extends Mock implements PlacePhotoRequest{}
 
 void main() {
   MockHttpClient mockHttpClient;
-  MockPlacePhotoRequest mockPlacePhotoRequest;
   final utf8Header = {
     "content-type":"application/json; charset=utf-8"
   }; // for mcoking utf-8 charset http response
@@ -22,7 +19,6 @@ void main() {
 
   setUp(() {
     mockHttpClient = MockHttpClient();
-    mockPlacePhotoRequest = MockPlacePhotoRequest();
   });
 
   test('build url', 

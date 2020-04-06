@@ -1,5 +1,7 @@
+import 'dart:convert';
+
+import 'package:flutter_google_places_api/responses/place_details_response.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_google_places_api/requests/place_autocomplete_request.dart';
 import 'package:flutter_google_places_api/requests/place_details_request.dart';
 import 'package:http/http.dart' as http;
 import 'package:mockito/mockito.dart';
@@ -27,7 +29,6 @@ void main(){
     'session_token': null,
     'fields': null,
   };
-  final tQuery = 'key=test_key&place_id=test_place_id&fields=name,rating,formatted_phone_number';
   final utf8Header = {
     "content-type":"application/json; charset=utf-8"
   }; // for mcoking utf-8 charset http response
@@ -51,23 +52,6 @@ void main(){
       ///assert
       verify(mockPlaceDetailsRequest.getQueryParams());
       expect(mockQueryParams, gottonQueryParams);
-    });
-
-    test('build query test',
-    () {
-      ///arrange
-      when(mockPlaceDetailsRequest.buildQuery(any)).thenAnswer((_)=>tQuery);
-      var tRequest = PlaceDetailsRequest(
-        key: tKey, 
-        placeId: tPlaceId,
-        fields: ['name', 'rating', 'formatted_phone_number'],
-      );
-      ///act
-      var mockQuery = mockPlaceDetailsRequest.buildQuery({});
-      var builtQuery = tRequest.buildQuery(tRequest.getQueryParams());
-      ///assert
-      verify(mockPlaceDetailsRequest.buildQuery({}));
-      expect(mockQuery, builtQuery);
     });
 
     test('build url test', 
@@ -98,8 +82,10 @@ void main(){
         placeId: tPlaceId,
         httpClient: mockHttpClient,
       ).call();
+      var tReponse = PlaceDetailsResponse.fromJson(json.decode(fixture('place_details_test_data.json')));
       ///assert
       verify(mockHttpClient.get(any));
+      expect(tReponse, equals(response));
     });
 
     test('should return place details response when the call has zero result', 
