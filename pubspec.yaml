@@ -1,6 +1,6 @@
 name: flutter_google_places_api
 description: A new Flutter package project.
-version: 0.0.1
+version: 0.0.11
 homepage: https://github.com/bamnenim/flutter_google_places_api
 
 environment:
