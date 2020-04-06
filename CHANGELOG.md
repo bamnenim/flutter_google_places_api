@@ -1,3 +1,4 @@
-## [0.0.1] - TODO: Add release date.
+# Change Log
 
-* TODO: Describe initial release.
+## 0.0.1
+First implementation of places api
