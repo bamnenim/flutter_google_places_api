@@ -1,6 +1,6 @@
 name: flutter_google_places_api
-description: A new Flutter package project.
-version: 0.0.11
+description: This is dart implementation of google places api. Each requests returns corresponding response object. Google places api requires google api key. You can follow instruction in https://developers.google.com/places/web-service/get-api-key to get api key.
+version: 0.0.12
 homepage: https://github.com/bamnenim/flutter_google_places_api
 
 environment:
