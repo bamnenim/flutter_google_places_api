@@ -1,6 +1,6 @@
 name: flutter_google_places_api
 description: This is dart implementation of google places api. Each requests returns correspoding response object.
-version: 0.0.12
+version: 0.0.13
 homepage: https://github.com/bamnenim/flutter_google_places_api
 
 environment:
