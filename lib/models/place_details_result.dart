@@ -62,99 +62,104 @@ class PlaceDetailsResult extends Model with EquatableMixin {
     this.website,
   });
 
-  factory PlaceDetailsResult.fromJson(Map map) => 
-    map != null ? PlaceDetailsResult(
-      addressComponents: map['address_components']
-        ?.map((p)=>AddressComponent.fromJson(p))
-        ?.toList()
-        ?.cast<AddressComponent>(), 
-      adrAddress: map['adr_address'], 
-      formattedAddress: map['formatted_address'], 
-      formattedPhoneNumber: map['formatted_phone_number'], 
-      geometry: map['geometry'] != null ? Geometry.fromJson(map['geometry']) : null, 
-      icon: map['icon'], 
-      id: map['id'], 
-      internationalPhoneNumber: map['international_phone_number'], 
-      name: map['name'], 
-      openingHours: map['opening_hours'] != null? OpeningHours.fromJson(map['opening_hours']) : null, 
-      permanentlyColosed: map['permanently_closed'], 
-      photos: map['photos']
-        ?.map((p)=>Photo.fromJson(p))
-        ?.toList()
-        ?.cast<Photo>(), 
-      placeId: map['place_id'], 
-      plusCode: map['plus_code'] != null ? PlusCode.fromJson(map['plus_code']) : null, 
-      priceLevel: map['price_level'], 
-      rating: map['rating'], 
-      reference: map['reference'], 
-      reviews: map['reviews']
-        ?.map((p)=>Review.fromJson(p))
-        ?.toList()
-        ?.cast<Review>(), 
-      scope: map['scope'], 
-      types: (map['types'] as List)?.cast<String>(), 
-      url: map['url'], 
-      userRatingsTotal: map['user_ratings_total'], 
-      utcOffset: map['utc_offset'], 
-      vicinity: map['vicinity'], 
-      website: map['website']
-    ) : null;
+  factory PlaceDetailsResult.fromJson(Map map) => map != null
+      ? PlaceDetailsResult(
+          addressComponents: map['address_components']
+              ?.map((p) => AddressComponent.fromJson(p))
+              ?.toList()
+              ?.cast<AddressComponent>(),
+          adrAddress: map['adr_address'],
+          formattedAddress: map['formatted_address'],
+          formattedPhoneNumber: map['formatted_phone_number'],
+          geometry: map['geometry'] != null
+              ? Geometry.fromJson(map['geometry'])
+              : null,
+          icon: map['icon'],
+          id: map['id'],
+          internationalPhoneNumber: map['international_phone_number'],
+          name: map['name'],
+          openingHours: map['opening_hours'] != null
+              ? OpeningHours.fromJson(map['opening_hours'])
+              : null,
+          permanentlyColosed: map['permanently_closed'],
+          photos: map['photos']
+              ?.map((p) => Photo.fromJson(p))
+              ?.toList()
+              ?.cast<Photo>(),
+          placeId: map['place_id'],
+          plusCode: map['plus_code'] != null
+              ? PlusCode.fromJson(map['plus_code'])
+              : null,
+          priceLevel: map['price_level'],
+          rating: map['rating'],
+          reference: map['reference'],
+          reviews: map['reviews']
+              ?.map((p) => Review.fromJson(p))
+              ?.toList()
+              ?.cast<Review>(),
+          scope: map['scope'],
+          types: (map['types'] as List)?.cast<String>(),
+          url: map['url'],
+          userRatingsTotal: map['user_ratings_total'],
+          utcOffset: map['utc_offset'],
+          vicinity: map['vicinity'],
+          website: map['website'])
+      : null;
 
   @override
   List<Object> get props => [
-    addressComponents,
-    adrAddress,
-    formattedAddress,
-    formattedPhoneNumber,
-    geometry,
-    icon,
-    id,
-    internationalPhoneNumber,
-    name,
-    permanentlyColosed,
-    placeId,
-    plusCode,
-    priceLevel,
-    rating,
-    reference,
-    scope,
-    types,
-    url,
-    userRatingsTotal,
-    utcOffset,
-    vicinity,
-    website
-  ];
+        addressComponents,
+        adrAddress,
+        formattedAddress,
+        formattedPhoneNumber,
+        geometry,
+        icon,
+        id,
+        internationalPhoneNumber,
+        name,
+        permanentlyColosed,
+        placeId,
+        plusCode,
+        priceLevel,
+        rating,
+        reference,
+        scope,
+        types,
+        url,
+        userRatingsTotal,
+        utcOffset,
+        vicinity,
+        website
+      ];
 
   @override
   Map<String, dynamic> toJson() {
     var map = Map<String, dynamic>();
-    map["address_components"] = addressComponents?.map((p)=>p.toJson())?.toList();
-    map["adr_address"] = adrAddress; 
-    map["formatted_address"] = formattedAddress; 
-    map["formatted_phone_number"] = formattedPhoneNumber; 
+    map["address_components"] =
+        addressComponents?.map((p) => p.toJson())?.toList();
+    map["adr_address"] = adrAddress;
+    map["formatted_address"] = formattedAddress;
+    map["formatted_phone_number"] = formattedPhoneNumber;
     map["geometry"] = geometry?.toJson();
-    map['icon'] = icon; 
-    map['id'] = id; 
-    map['international_phone_number'] = internationalPhoneNumber; 
+    map['icon'] = icon;
+    map['id'] = id;
+    map['international_phone_number'] = internationalPhoneNumber;
     map['name'] = name;
-    if(openingHours != null)
-      map['opening_hours'] = openingHours?.toJson(); 
-    map['permanently_closed'] = permanentlyColosed; 
-    map['photos'] = photos?.map((p)=>p.toJson())?.toList();
-    map['place_id'] = placeId; 
+    if (openingHours != null) map['opening_hours'] = openingHours?.toJson();
+    map['permanently_closed'] = permanentlyColosed;
+    map['photos'] = photos?.map((p) => p.toJson())?.toList();
+    map['place_id'] = placeId;
     map['plus_code'] = plusCode?.toJson();
-    if(priceLevel != null)
-      map['price_level'] = priceLevel; 
-    map['rating'] = rating; 
-    map['reference'] = reference; 
-    map['reviews'] = reviews?.map((p)=>p.toJson())?.toList();
-    map['scope'] = scope; 
-    map['types'] = types; 
-    map['url'] = url; 
-    map['user_ratings_total'] = userRatingsTotal; 
-    map['utc_offset'] = utcOffset; 
-    map['vicinity'] = vicinity; 
+    if (priceLevel != null) map['price_level'] = priceLevel;
+    map['rating'] = rating;
+    map['reference'] = reference;
+    map['reviews'] = reviews?.map((p) => p.toJson())?.toList();
+    map['scope'] = scope;
+    map['types'] = types;
+    map['url'] = url;
+    map['user_ratings_total'] = userRatingsTotal;
+    map['utc_offset'] = utcOffset;
+    map['vicinity'] = vicinity;
     map['website'] = website;
     return map;
   }

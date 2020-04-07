@@ -8,8 +8,8 @@ void main() {
     var tResponseJson = json.decode(fixture('nearby_search_test_data.json'));
     test('fromJson test', () {
       ///arrange
-      var tResponse = 
-      NearbySearchResponse.fromJson(tResponseJson);
+      var tResponse = NearbySearchResponse.fromJson(tResponseJson);
+
       ///assert
       expect(tResponse.status.status, equals('OK'));
     });
@@ -17,6 +17,7 @@ void main() {
     test('toJson test', () {
       ///arrange
       var tResponseFromJson = NearbySearchResponse.fromJson(tResponseJson);
+
       ///assert
       expect(tResponseJson, equals(tResponseFromJson.toJson()));
     });

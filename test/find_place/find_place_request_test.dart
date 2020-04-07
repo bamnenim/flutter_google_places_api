@@ -7,18 +7,20 @@ import 'package:mockito/mockito.dart';
 
 import '../fixtures/fixture_reader.dart';
 
-class MockHttpClient extends Mock implements Client{}
-class MockFindPlaceRequest extends Mock implements FindPlaceRequest{}
+class MockHttpClient extends Mock implements Client {}
+
+class MockFindPlaceRequest extends Mock implements FindPlaceRequest {}
 
 void main() {
   MockHttpClient mockHttpClient;
   final utf8Header = {
-    "content-type":"application/json; charset=utf-8"
+    "content-type": "application/json; charset=utf-8"
   }; // for mcoking utf-8 charset http response
   final tKey = 'test_key';
   final tInput = 'test_input';
   final tInputType = 'phonenumber';
-  final tUrl = 'https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=test_input&inputtype=phonenumber&fields=place_id&key=test_key';
+  final tUrl =
+      'https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=test_input&inputtype=phonenumber&fields=place_id&key=test_key';
   final tFields = ['place_id'];
   setUp(() {
     mockHttpClient = MockHttpClient();
@@ -28,37 +30,35 @@ void main() {
     test('build url', () {
       ///arrange
       var request = FindPlaceRequest(
-        key: tKey, 
-        input: tInput, 
+        key: tKey,
+        input: tInput,
         inputType: tInputType,
         fields: tFields,
       );
+
       ///act
       var url = request.buildUrl();
+
       ///assert
       expect(url, tUrl);
     });
 
-    test('call', 
-    () async {
+    test('call', () async {
       ///arrange
-      when(mockHttpClient.get(any))
-      .thenAnswer((_) async => Response(
-        fixture('find_place_response_test_data.json'), 
-        200, 
-        headers: utf8Header
-      ));
-      
-      var tResponse = FindPlaceResponse(
-        status: PlaceStatus(status: 'OK')
-      );
+      when(mockHttpClient.get(any)).thenAnswer((_) async => Response(
+          fixture('find_place_response_test_data.json'), 200,
+          headers: utf8Header));
+
+      var tResponse = FindPlaceResponse(status: PlaceStatus(status: 'OK'));
+
       ///act
       var response = await FindPlaceRequest(
-        key: null, 
-        input: null, 
+        key: null,
+        input: null,
         inputType: null,
         httpClient: mockHttpClient,
       ).call();
+
       ///assert
       verify(mockHttpClient.get(any));
       expect(tResponse.status.status, equals(response.status.status));

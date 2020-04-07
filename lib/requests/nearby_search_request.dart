@@ -6,7 +6,7 @@ import 'package:flutter_google_places_api/responses/nearby_search_response.dart'
 import 'package:http/http.dart';
 import 'package:meta/meta.dart';
 
-class NearbySearchRequest extends PlacesRequest{
+class NearbySearchRequest extends PlacesRequest {
   final String key;
   final Location location;
   final num radius;
@@ -35,7 +35,7 @@ class NearbySearchRequest extends PlacesRequest{
     this.rankBy,
     this.type,
     this.pageToken,
-  }) : super(key: key, url: 'nearbysearch/json'){
+  }) : super(key: key, url: 'nearbysearch/json') {
     httpClient ??= Client();
   }
   @override
@@ -45,26 +45,25 @@ class NearbySearchRequest extends PlacesRequest{
   }
 
   @override
-  Future<NearbySearchResponse> call() async => 
-    NearbySearchResponse.fromJson(json.decode((await getHttpFrom(buildUrl())).body));
+  Future<NearbySearchResponse> call() async => NearbySearchResponse.fromJson(
+      json.decode((await getHttpFrom(buildUrl())).body));
 
   @override
   Map<String, dynamic> getQueryParams() {
     var params = {
-      'key' : key,
-      'location' : location,
-      'radius' : radius,
-      'minprice' : minPrice,
-      'maxprice' : maxPrince,
-      'keyword' : keyword,
-      'language' : language,
-      'name' : name,
-      'opennow' : openNow,
-      'rankby' : rankBy,
-      'type' : type,
-      'pagetoken' : pageToken,
+      'key': key,
+      'location': location,
+      'radius': radius,
+      'minprice': minPrice,
+      'maxprice': maxPrince,
+      'keyword': keyword,
+      'language': language,
+      'name': name,
+      'opennow': openNow,
+      'rankby': rankBy,
+      'type': type,
+      'pagetoken': pageToken,
     };
     return params;
   }
-  
 }

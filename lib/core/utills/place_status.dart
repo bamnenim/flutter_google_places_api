@@ -1,7 +1,7 @@
 import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
 
-class PlaceStatus extends Equatable{  
+class PlaceStatus extends Equatable {
   static const okay = 'OK';
   static const zeroResults = 'ZERO_RESULTS';
   static const overQueryLimit = 'OVER_QUERY_LIMIT';
@@ -14,10 +14,7 @@ class PlaceStatus extends Equatable{
 
   final String status;
   final String errorMessage;
-  PlaceStatus({
-    @required this.status,
-    this.errorMessage
-  });
+  PlaceStatus({@required this.status, this.errorMessage});
 
   @override
   List<Object> get props => [status, errorMessage];

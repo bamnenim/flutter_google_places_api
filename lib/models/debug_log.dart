@@ -1,12 +1,12 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter_google_places_api/models/model.dart';
 
-class DebugLog extends Model with EquatableMixin{
+class DebugLog extends Model with EquatableMixin {
   final List<String> line;
   DebugLog(this.line);
 
-  factory DebugLog.fromJson(Map map) => 
-    map != null? DebugLog((map['line'] as List)?.cast<String>()) : null;
+  factory DebugLog.fromJson(Map map) =>
+      map != null ? DebugLog((map['line'] as List)?.cast<String>()) : null;
 
   @override
   List<Object> get props => [line];
@@ -17,6 +17,7 @@ class DebugLog extends Model with EquatableMixin{
     map['line'] = line;
     return map;
   }
+
   @override
   String toString() {
     return toJson().toString();

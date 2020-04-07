@@ -3,7 +3,7 @@ import 'package:flutter_google_places_api/responses/place_photos_response.dart';
 import 'package:http/http.dart';
 import 'package:meta/meta.dart';
 
-class PlacePhotoRequest extends PlacesRequest{
+class PlacePhotoRequest extends PlacesRequest {
   final String key;
   final String photoReference;
   num maxHeight;
@@ -11,16 +11,12 @@ class PlacePhotoRequest extends PlacesRequest{
   Client httpClient;
 
   PlacePhotoRequest({
-    @required this.key, 
-    @required this.photoReference, 
-    this.maxHeight = 1600, 
+    @required this.key,
+    @required this.photoReference,
+    this.maxHeight = 1600,
     this.maxWidth = 1600,
     this.httpClient,
-  }) : super(
-    key: key,
-    url: 'photo',
-    httpClient: httpClient
-  ) {
+  }) : super(key: key, url: 'photo', httpClient: httpClient) {
     httpClient ??= Client();
   }
 
@@ -32,7 +28,7 @@ class PlacePhotoRequest extends PlacesRequest{
 
   @override
   Future<PlacePhotoResponse> call() async =>
-    PlacePhotoResponse((await getHttpFrom(buildUrl())).bodyBytes);
+      PlacePhotoResponse((await getHttpFrom(buildUrl())).bodyBytes);
 
   @override
   Map<String, dynamic> getQueryParams() {
@@ -44,5 +40,4 @@ class PlacePhotoRequest extends PlacesRequest{
     };
     return params;
   }
-  
 }

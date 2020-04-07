@@ -2,9 +2,10 @@ import 'package:http/http.dart';
 import 'package:meta/meta.dart';
 import 'package:flutter_google_places_api/responses/place_response.dart';
 
-const String _googlePlacesBaseUrl = 'https://maps.googleapis.com/maps/api/place/';
+const String _googlePlacesBaseUrl =
+    'https://maps.googleapis.com/maps/api/place/';
 
-abstract class PlacesRequest{
+abstract class PlacesRequest {
   final String _key;
   String get key => _key;
 
@@ -18,9 +19,9 @@ abstract class PlacesRequest{
     String key,
     String url,
     Client httpClient,
-  }) : _url = '$_googlePlacesBaseUrl$url?',
-      _key = key,
-      _httpClient = httpClient ?? Client();
+  })  : _url = '$_googlePlacesBaseUrl$url?',
+        _key = key,
+        _httpClient = httpClient ?? Client();
 
   String buildUrl();
   Future<PlaceResponse> call();

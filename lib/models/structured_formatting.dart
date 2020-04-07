@@ -1,7 +1,7 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter_google_places_api/models/matched_substrings.dart';
 
-class StructuredFormatting extends Equatable{
+class StructuredFormatting extends Equatable {
   final String mainText;
   final List<MatchedSubstring> mainTextMatchedSubstrings;
   final String secondaryText;
@@ -14,27 +14,31 @@ class StructuredFormatting extends Equatable{
     this.secondaryTextMatchedSubstrings,
   });
 
-  factory StructuredFormatting.fromJson(Map map) => 
-    map != null ? StructuredFormatting(
-      mainText : map['main_text'],
-      mainTextMatchedSubstrings: map['main_text_matched_substrings']
-      ?.map((p) => MatchedSubstring.fromJson(p))
-      ?.toList()
-      ?.cast<MatchedSubstring>(),
-      secondaryText: map['secondary_text'],
-      secondaryTextMatchedSubstrings: map['secondary_text_matched_substrings']
-      ?.map((p) => MatchedSubstring.fromJson(p))
-      ?.toList()
-      ?.cast<MatchedSubstring>(),
-    ) : null;
+  factory StructuredFormatting.fromJson(Map map) => map != null
+      ? StructuredFormatting(
+          mainText: map['main_text'],
+          mainTextMatchedSubstrings: map['main_text_matched_substrings']
+              ?.map((p) => MatchedSubstring.fromJson(p))
+              ?.toList()
+              ?.cast<MatchedSubstring>(),
+          secondaryText: map['secondary_text'],
+          secondaryTextMatchedSubstrings:
+              map['secondary_text_matched_substrings']
+                  ?.map((p) => MatchedSubstring.fromJson(p))
+                  ?.toList()
+                  ?.cast<MatchedSubstring>(),
+        )
+      : null;
 
-  Map<String,dynamic> toJson() {
+  Map<String, dynamic> toJson() {
     var map = Map<String, dynamic>();
     map['main_text'] = mainText;
-    map['main_text_matched_substrings'] = mainTextMatchedSubstrings?.map((p)=>p.toJson())?.toList();
+    map['main_text_matched_substrings'] =
+        mainTextMatchedSubstrings?.map((p) => p.toJson())?.toList();
     map['secondary_text'] = secondaryText;
-    if(secondaryTextMatchedSubstrings != null)
-      map['secondary_text_matched_substrings'] = secondaryTextMatchedSubstrings?.map((p)=>p.toJson())?.toList();
+    if (secondaryTextMatchedSubstrings != null)
+      map['secondary_text_matched_substrings'] =
+          secondaryTextMatchedSubstrings?.map((p) => p.toJson())?.toList();
     return map;
   }
 
@@ -44,6 +48,10 @@ class StructuredFormatting extends Equatable{
   }
 
   @override
-  List<Object> get props => 
-    [mainText, mainTextMatchedSubstrings, secondaryText, secondaryTextMatchedSubstrings];
+  List<Object> get props => [
+        mainText,
+        mainTextMatchedSubstrings,
+        secondaryText,
+        secondaryTextMatchedSubstrings
+      ];
 }

@@ -6,16 +6,17 @@ class Viewport extends Equatable {
   final Location southwest;
   Viewport(this.northeast, this.southwest);
 
-  factory Viewport.fromJson(Map map) =>
-    map != null ? Viewport(
-      Location.fromJson(map['northeast']),
-      Location.fromJson(map['southwest']),
-    ) : null;
+  factory Viewport.fromJson(Map map) => map != null
+      ? Viewport(
+          Location.fromJson(map['northeast']),
+          Location.fromJson(map['southwest']),
+        )
+      : null;
 
   Map<String, dynamic> toJson() => {
-    "northeast" : northeast.toJson(),
-    "southwest" : southwest.toJson(),
-  };
+        "northeast": northeast.toJson(),
+        "southwest": southwest.toJson(),
+      };
 
   @override
   String toString() {

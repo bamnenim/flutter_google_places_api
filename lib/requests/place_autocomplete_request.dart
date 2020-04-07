@@ -8,7 +8,6 @@ import 'package:meta/meta.dart';
 import 'package:flutter_google_places_api/responses/place_autocomplete_response.dart';
 
 class PlaceAutocompleteRequest extends PlacesRequest {
-
   final String key;
   final String input;
   final String sessionToken;
@@ -35,11 +34,7 @@ class PlaceAutocompleteRequest extends PlacesRequest {
     this.components,
     this.strictBounds,
     this.httpClient,
-  }) : super(
-    key: key, 
-    url: 'autocomplete/json', 
-    httpClient: httpClient
-  ) {
+  }) : super(key: key, url: 'autocomplete/json', httpClient: httpClient) {
     httpClient ??= Client();
   }
 
@@ -51,7 +46,8 @@ class PlaceAutocompleteRequest extends PlacesRequest {
 
   @override
   Future<PlaceAutocompleteResponse> call() async =>
-    PlaceAutocompleteResponse.fromJson(json.decode((await getHttpFrom(buildUrl())).body)); 
+      PlaceAutocompleteResponse.fromJson(
+          json.decode((await getHttpFrom(buildUrl())).body));
 
   @override
   Map<String, dynamic> getQueryParams() {

@@ -6,7 +6,7 @@ import 'package:flutter_google_places_api/responses/text_search_response.dart';
 import 'package:http/http.dart';
 import 'package:meta/meta.dart';
 
-class TextSearchRequest extends PlacesRequest{
+class TextSearchRequest extends PlacesRequest {
   final String key;
   final String query;
   final String region;
@@ -33,7 +33,7 @@ class TextSearchRequest extends PlacesRequest{
     this.pageToken,
     this.type,
     this.httpClient,
-  }) : super(key: key, url: 'textsearch/json'){
+  }) : super(key: key, url: 'textsearch/json') {
     httpClient ??= Client();
   }
 
@@ -44,25 +44,24 @@ class TextSearchRequest extends PlacesRequest{
   }
 
   @override
-  Future<TextSearchResponse> call() async => 
-    TextSearchResponse.fromJson(json.decode((await getHttpFrom(buildUrl())).body));
+  Future<TextSearchResponse> call() async => TextSearchResponse.fromJson(
+      json.decode((await getHttpFrom(buildUrl())).body));
 
   @override
   Map<String, dynamic> getQueryParams() {
     var params = {
       'key': key,
-      'query' : Uri.encodeQueryComponent(query),
-      'region' : region,
-      'location' : location,
-      'radius' : radius,
-      'language' : language,
-      'minprice' : minPrice,
-      'maxprice' : maxPrice,
-      'opennow' : openNow,
-      'pagetoken' : pageToken,
-      'type' : type,
+      'query': Uri.encodeQueryComponent(query),
+      'region': region,
+      'location': location,
+      'radius': radius,
+      'language': language,
+      'minprice': minPrice,
+      'maxprice': maxPrice,
+      'opennow': openNow,
+      'pagetoken': pageToken,
+      'type': type,
     };
     return params;
   }
-  
 }

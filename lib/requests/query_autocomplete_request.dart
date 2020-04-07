@@ -6,7 +6,6 @@ import 'package:http/http.dart';
 import 'package:meta/meta.dart';
 
 class QueryAutocompleteRequest extends PlacesRequest {
-
   final String key;
   final String input;
   final num offset;
@@ -23,11 +22,7 @@ class QueryAutocompleteRequest extends PlacesRequest {
     this.radius,
     this.language,
     this.httpClient,
-  }) : super(
-    key: key, 
-    url: 'queryautocomplete/json', 
-    httpClient: httpClient
-  ) {
+  }) : super(key: key, url: 'queryautocomplete/json', httpClient: httpClient) {
     httpClient ??= Client();
   }
 
@@ -39,7 +34,8 @@ class QueryAutocompleteRequest extends PlacesRequest {
 
   @override
   Future<QueryAutocompleteResponse> call() async =>
-    QueryAutocompleteResponse.fromJson(json.decode((await getHttpFrom(buildUrl())).body)); 
+      QueryAutocompleteResponse.fromJson(
+          json.decode((await getHttpFrom(buildUrl())).body));
 
   @override
   Map<String, dynamic> getQueryParams() {

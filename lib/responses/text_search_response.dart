@@ -4,7 +4,7 @@ import 'package:flutter_google_places_api/models/text_search_result.dart';
 import 'package:flutter_google_places_api/responses/place_response.dart';
 import 'package:meta/meta.dart';
 
-class TextSearchResponse extends PlaceResponse with EquatableMixin{
+class TextSearchResponse extends PlaceResponse with EquatableMixin {
   final PlaceStatus status;
   final List<String> htmlAttributions;
   final List<TextSearchResult> results;
@@ -15,28 +15,30 @@ class TextSearchResponse extends PlaceResponse with EquatableMixin{
     this.results,
   }) : super(status: status);
 
-  factory TextSearchResponse.fromJson(Map json) => 
-    json != null ? TextSearchResponse(
-      status: PlaceStatus(
-        status: json['status'],
-        errorMessage: json['error_message'] != null ? json['error_message'] : null
-      ),
-      htmlAttributions: json['html_attributions'] != null ? 
-        (json['html_attributions'] as List)?.cast<String>() : [],
-      results: json['results']
-      ?.map((p)=>TextSearchResult.fromJson(p))
-      ?.toList()
-      ?.cast<TextSearchResult>(),
-    ) : null;
+  factory TextSearchResponse.fromJson(Map json) => json != null
+      ? TextSearchResponse(
+          status: PlaceStatus(
+              status: json['status'],
+              errorMessage:
+                  json['error_message'] != null ? json['error_message'] : null),
+          htmlAttributions: json['html_attributions'] != null
+              ? (json['html_attributions'] as List)?.cast<String>()
+              : [],
+          results: json['results']
+              ?.map((p) => TextSearchResult.fromJson(p))
+              ?.toList()
+              ?.cast<TextSearchResult>(),
+        )
+      : null;
 
-  Map<String, dynamic> toJson(){
+  Map<String, dynamic> toJson() {
     var map = Map<String, dynamic>();
     map['status'] = this.status.status;
-    if(this.status.errorMessage != null){
+    if (this.status.errorMessage != null) {
       map['error_message'] = this.status.errorMessage;
     }
     map['html_attributions'] = this.htmlAttributions;
-    map['results'] = results?.map((p)=>p.toJson())?.toList();
+    map['results'] = results?.map((p) => p.toJson())?.toList();
     return map;
   }
 
@@ -47,5 +49,4 @@ class TextSearchResponse extends PlaceResponse with EquatableMixin{
 
   @override
   List<Object> get props => [status, htmlAttributions, results];
-
 }

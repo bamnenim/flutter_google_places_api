@@ -5,7 +5,7 @@ import 'package:flutter_google_places_api/responses/find_place_response.dart';
 import 'package:http/http.dart';
 import 'package:meta/meta.dart';
 
-class FindPlaceRequest extends PlacesRequest{
+class FindPlaceRequest extends PlacesRequest {
   final String key;
   final String input;
   final String inputType;
@@ -14,22 +14,21 @@ class FindPlaceRequest extends PlacesRequest{
   final String locationBias; // need to be fixed
   Client httpClient;
 
-  FindPlaceRequest({
-    @required this.key,
-    @required this.input,
-    @required this.inputType,
-    this.language,
-    this.fields,
-    this.locationBias,
-    this.httpClient
-  }) : super(
-    key: key,
-    url: 'findplacefromtext/json',
-    httpClient : httpClient,
-  ){
+  FindPlaceRequest(
+      {@required this.key,
+      @required this.input,
+      @required this.inputType,
+      this.language,
+      this.fields,
+      this.locationBias,
+      this.httpClient})
+      : super(
+          key: key,
+          url: 'findplacefromtext/json',
+          httpClient: httpClient,
+        ) {
     httpClient ??= Client();
   }
-
 
   @override
   String buildUrl() {
@@ -38,8 +37,8 @@ class FindPlaceRequest extends PlacesRequest{
   }
 
   @override
-  Future<FindPlaceResponse> call() async => 
-    FindPlaceResponse.fromJson(json.decode((await getHttpFrom(buildUrl())).body));
+  Future<FindPlaceResponse> call() async => FindPlaceResponse.fromJson(
+      json.decode((await getHttpFrom(buildUrl())).body));
 
   @override
   Map<String, dynamic> getQueryParams() {
@@ -53,5 +52,4 @@ class FindPlaceRequest extends PlacesRequest{
     };
     return params;
   }
-  
 }

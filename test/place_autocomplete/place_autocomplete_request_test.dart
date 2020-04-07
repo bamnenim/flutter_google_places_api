@@ -7,22 +7,25 @@ import 'package:http/http.dart' as http;
 
 import '../fixtures/fixture_reader.dart';
 
-class MockHttpClient extends Mock implements http.Client{}
-class MockPlaceAutocompleteRequest extends Mock implements PlaceAutocompleteRequest{}
+class MockHttpClient extends Mock implements http.Client {}
+
+class MockPlaceAutocompleteRequest extends Mock
+    implements PlaceAutocompleteRequest {}
 
 void main() {
-
   MockHttpClient mockHttpClient;
   MockPlaceAutocompleteRequest mockPlaceAutocompleteRequest;
 
   final tInput = 'test_input';
   final tKey = 'test_key';
-  final tSucccessResponse = PlaceAutocompleteResponse.fromJson(json.decode(fixture('place_autocomplete_test_data.json')));
-  final tFailureResponse = PlaceAutocompleteResponse.fromJson(json.decode(fixture('zero_results.json')));
-  final tKeyFailureReponse = 
-  PlaceAutocompleteResponse.fromJson(json.decode(fixture('invalid_api_key.json')));
-  final tUrl = 
-  'https://maps.googleapis.com/maps/api/place/autocomplete/json?key=test_key&input=test_input';
+  final tSucccessResponse = PlaceAutocompleteResponse.fromJson(
+      json.decode(fixture('place_autocomplete_test_data.json')));
+  final tFailureResponse = PlaceAutocompleteResponse.fromJson(
+      json.decode(fixture('zero_results.json')));
+  final tKeyFailureReponse = PlaceAutocompleteResponse.fromJson(
+      json.decode(fixture('invalid_api_key.json')));
+  final tUrl =
+      'https://maps.googleapis.com/maps/api/place/autocomplete/json?key=test_key&input=test_input';
   final tQueryParams = {
     'key': tKey,
     'input': tInput,
@@ -42,80 +45,85 @@ void main() {
     mockPlaceAutocompleteRequest = MockPlaceAutocompleteRequest();
   });
 
-  test('get query params should return map object matching each prams and value', 
-  () {
+  test(
+      'get query params should return map object matching each prams and value',
+      () {
     ///arrange
-    when(mockPlaceAutocompleteRequest.getQueryParams()).thenAnswer((_)=>tQueryParams);
+    when(mockPlaceAutocompleteRequest.getQueryParams())
+        .thenAnswer((_) => tQueryParams);
+
     ///act
     var mockQueryParams = mockPlaceAutocompleteRequest.getQueryParams();
-    var gottonQueryParams = PlaceAutocompleteRequest(
-      key: tKey, 
-      input: tInput, 
-      language: 'kr'
-    ).getQueryParams();
+    var gottonQueryParams =
+        PlaceAutocompleteRequest(key: tKey, input: tInput, language: 'kr')
+            .getQueryParams();
+
     ///assert
     verify(mockPlaceAutocompleteRequest.getQueryParams());
     expect(mockQueryParams, gottonQueryParams);
   });
 
-  test(' build url test', 
-  () async {
+  test(' build url test', () async {
     ///arrange
-    when(mockPlaceAutocompleteRequest.buildUrl())
-    .thenAnswer((_) => tUrl);
+    when(mockPlaceAutocompleteRequest.buildUrl()).thenAnswer((_) => tUrl);
+
     ///act
     var mockUrl = mockPlaceAutocompleteRequest.buildUrl();
-    var builtUrl = PlaceAutocompleteRequest(key: tKey, input: tInput).buildUrl();
+    var builtUrl =
+        PlaceAutocompleteRequest(key: tKey, input: tInput).buildUrl();
+
     ///assert
     verify(mockPlaceAutocompleteRequest.buildUrl());
     expect(mockUrl, builtUrl);
   });
 
   test('should return place autocomplete response when the call is successful',
-  () async  {
+      () async {
     ///arrange
-    when(mockHttpClient.get(any))
-    .thenAnswer((_) async => http.Response(fixture('place_autocomplete_test_data.json'), 200));
+    when(mockHttpClient.get(any)).thenAnswer((_) async =>
+        http.Response(fixture('place_autocomplete_test_data.json'), 200));
+
     ///act
     var response = await PlaceAutocompleteRequest(
-      key: tKey, 
-      input: tInput, 
-      httpClient: mockHttpClient
-    ).call();
+            key: tKey, input: tInput, httpClient: mockHttpClient)
+        .call();
+
     ///assert
     verify(mockHttpClient.get(any));
     expect(tSucccessResponse.status.status, response.status.status);
     expect(tSucccessResponse.predictions, response.predictions);
   });
 
-  test('should return place autocomplete response when the call is unsuccessful',
-  () async  {
+  test(
+      'should return place autocomplete response when the call is unsuccessful',
+      () async {
     ///arrange
-    when(mockHttpClient.get(any))
-    .thenAnswer((_) async => http.Response(fixture('zero_results.json'), 404));
+    when(mockHttpClient.get(any)).thenAnswer(
+        (_) async => http.Response(fixture('zero_results.json'), 404));
+
     ///act
     var response = await PlaceAutocompleteRequest(
-      key: tKey, 
-      input: tInput, 
-      httpClient: mockHttpClient
-    ).call();
+            key: tKey, input: tInput, httpClient: mockHttpClient)
+        .call();
+
     ///assert
     verify(mockHttpClient.get(any));
     expect(tFailureResponse.status.status, response.status.status);
     expect(tFailureResponse.predictions, response.predictions);
   });
 
-  test('should response have error message field when the call has error message',
-  () async  {
+  test(
+      'should response have error message field when the call has error message',
+      () async {
     ///arrange
-    when(mockHttpClient.get(any))
-    .thenAnswer((_) async => http.Response(fixture('invalid_api_key.json'), 404));
+    when(mockHttpClient.get(any)).thenAnswer(
+        (_) async => http.Response(fixture('invalid_api_key.json'), 404));
+
     ///act
     var response = await PlaceAutocompleteRequest(
-      key: tKey, 
-      input: tInput, 
-      httpClient: mockHttpClient
-    ).call();
+            key: tKey, input: tInput, httpClient: mockHttpClient)
+        .call();
+
     ///assert
     verify(mockHttpClient.get(any));
     expect(tKeyFailureReponse.status.status, response.status.status);

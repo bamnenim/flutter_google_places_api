@@ -6,8 +6,7 @@ import 'package:flutter_google_places_api/responses/place_response.dart';
 import 'package:meta/meta.dart';
 import 'package:http/http.dart';
 
-class PlaceDetailsRequest extends PlacesRequest{
-
+class PlaceDetailsRequest extends PlacesRequest {
   final String key;
   final String placeId;
   final String language;
@@ -17,21 +16,16 @@ class PlaceDetailsRequest extends PlacesRequest{
   Client httpClient;
 
   PlaceDetailsRequest({
-    @required this.key, 
-    @required this.placeId, 
-    this.language, 
-    this.region, 
+    @required this.key,
+    @required this.placeId,
+    this.language,
+    this.region,
     this.sessionToken,
     this.fields,
     this.httpClient,
-  }) : super(
-    key: key,
-    url: 'details/json',
-    httpClient : httpClient
-  ) {
+  }) : super(key: key, url: 'details/json', httpClient: httpClient) {
     httpClient ??= Client();
   }
-
 
   @override
   String buildUrl() {
@@ -40,8 +34,8 @@ class PlaceDetailsRequest extends PlacesRequest{
   }
 
   @override
-  Future<PlaceResponse> call() async =>
-    PlaceDetailsResponse.fromJson(json.decode((await getHttpFrom(buildUrl())).body));
+  Future<PlaceResponse> call() async => PlaceDetailsResponse.fromJson(
+      json.decode((await getHttpFrom(buildUrl())).body));
 
   @override
   Map<String, dynamic> getQueryParams() {
@@ -55,5 +49,4 @@ class PlaceDetailsRequest extends PlacesRequest{
     };
     return params;
   }
-  
 }

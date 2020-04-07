@@ -1,7 +1,7 @@
 import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
 
-class Location extends Equatable{
+class Location extends Equatable {
   final double lat;
   final double lng;
   Location({
@@ -10,12 +10,12 @@ class Location extends Equatable{
   });
 
   factory Location.fromJson(Map json) =>
-    json != null ? Location(lat: json['lat'], lng: json['lng']) : null;
+      json != null ? Location(lat: json['lat'], lng: json['lng']) : null;
 
   Map<String, dynamic> toJson() => {
-    "lat": lat,
-    "lng": lng,
-  };
+        "lat": lat,
+        "lng": lng,
+      };
 
   @override
   String toString() {
