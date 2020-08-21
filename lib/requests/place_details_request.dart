@@ -34,7 +34,7 @@ class PlaceDetailsRequest extends PlacesRequest {
   }
 
   @override
-  Future<PlaceResponse> call() async => PlaceDetailsResponse.fromJson(
+  Future<PlaceDetailsResponse> call() async => PlaceDetailsResponse.fromJson(
       json.decode((await getHttpFrom(buildUrl())).body));
 
   @override
