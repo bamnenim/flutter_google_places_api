@@ -45,11 +45,11 @@ abstract class PlacesRequest {
   void dispose() => httpClient.close();
 
   @protected
-  Future<Response> getHttpFrom(String url) => httpClient.get(url);
+  Future<Response> getHttpFrom(String url) => httpClient.get(Uri.parse(url));
 
   @protected
   Future<Response> postHttpTo(String url, String body) {
-    return httpClient.post(url, body: body, headers: {
+    return httpClient.post(Uri.parse(url), body: body, headers: {
       'Content-type': 'application/json',
     });
   }
