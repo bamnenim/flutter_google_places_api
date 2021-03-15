@@ -5,7 +5,7 @@ class Components {
     List<String> comp,
   }) {
     if (comp == null)
-      _components = List<String>();
+      _components = <String>[];
     else
       _components = comp;
   }
