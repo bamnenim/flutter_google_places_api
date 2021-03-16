@@ -2,7 +2,6 @@ import 'dart:convert';
 
 import 'package:flutter_google_places_api/requests/places_request.dart';
 import 'package:flutter_google_places_api/responses/place_details_response.dart';
-import 'package:flutter_google_places_api/responses/place_response.dart';
 import 'package:meta/meta.dart';
 import 'package:http/http.dart';
 
